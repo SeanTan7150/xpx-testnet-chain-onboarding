@@ -34,11 +34,11 @@ cd linux-storage-tool
 
 2. Enter the following information for settings:
 
-- REST Server Address: `api-2.testnet2.xpxsirius.io:3000`
-
-- Replicator Bootstrap Address: `genesis-p2p-2.testnet2.xpxsirius.io:7904`
+- REST Server Address: `api-2.testnet2.xpxsirius.io:3000` or `18.142.186.205:3000`
+- Replicator Bootstrap Address: `genesis-p2p-2.testnet2.xpxsirius.io:7904` or `54.151.161.246:7904`
 - Local UDP Port: `6846` (Default Port)
 - Account Name: **Select the Account Name is Step 1**
 - Download folder: **Click `Choose Directory` to select the directory you want to download files from drives**
 - Fee Multiplier: `15000` (default fee multiplier for *Testnet2*)
 
+**Tips**: You may use `nslookup` command to retrieve both REST Server and Replicator Bootstrap addresses.

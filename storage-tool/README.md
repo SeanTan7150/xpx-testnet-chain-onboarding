@@ -39,7 +39,7 @@ cd linux-storage-tool
 - REST Server Address: `api-2.testnet2.xpxsirius.io:3000` or `18.142.186.205:3000`
 - Replicator Bootstrap Address: `genesis-p2p-2.testnet2.xpxsirius.io:7904` or `54.151.161.246:7904`
 - Local UDP Port: `6846` (Default Port)
-- Account Name: **Select the Account Name is Step 1**
+- Account Name: **Select the Account Name in Step 1**
 - Download folder: **Click `Choose Directory` to select the directory you want to download files from drives**
 - Fee Multiplier: `15000` (default fee multiplier for *Testnet2*)
 
@@ -63,9 +63,9 @@ cd linux-storage-tool
 
 2. Enter the following information for Create Drive dialog:
 
-- Name: **Select any name of your choosing**
-- Replicator Number: `5`
-- Max Drive Size: **Select an amount that does not exceed the smallest capacity among the onboarded replicators (`1024`)**
+- Name: **Enter any name of your choosing**
+- Replicator Number: **Enter the number of replicators (`5`)**
+- Max Drive Size: **Enter an amount that does not exceed the smallest capacity among the onboarded replicators (`1024`)**
 - Local Drive Folder: **Click `Choose Directory` to select the directory you want the local drive to be located**
 
 3. Click on `Confirm` to create drive.
@@ -83,6 +83,29 @@ cd linux-storage-tool
 3. Notification will be received if the modification is registered completed.
 
 4. Your files will appear at the left half of the window, indicating that the `Replicated Drive` now contains them.
+
+## Deploy a supercontract
+
+1. After uploading supercontract `(.wasm)` files to replicators, click on `Contracts` tab.
+
+2. Click on `Deployment` tab and enter the following information for deployment:
+
+- Drive: **Select the Drive created**
+- Assignee: **Enter the `Public Key` to which the test-XPX is transferred during Supercontract Closure (`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`)**
+- File: **Enter the name of the main supercontract to be executed first**
+- Function: **Enter the name of the function to be executed first**
+- Parameters: **Enter the parameters of the function mentioned `(optional)`**
+- Execution Call Payment: **Select a limit of `SC` units for one supercontract execution**
+- Download Call Payment: **Select a limit of `SM` units for one `SM` synchronization**
+- Automatic Executions Number: **Select an amount**
+- Automatic Executions File Name: **Enter the name of the auxiliary supercontract for automated executions**
+- Automatic Execution Function Name: **Enter the name of the function to be executed if the auxiliary supercontract requirement is met**
+- Automatic Execution Call Payment: **Select a limit of `SC` units for one automated supercontract execution**
+- Automatic Download Call Payment: **Select a limit of `SM` units for one `SM` synchronization**
+
+3. Click on `Deploy` to deploy supercontract.
+
+**Note**: Function names does not include parentheses. e.g.: Enter `run` instead of `run()`.
 
 ## Remove drive
 

@@ -32,7 +32,9 @@ cd linux-storage-tool
 
 1. Enter `Account name` and `Private Key`.  Click on `Generate Key` if you wish to use a new private key.  Please ensure the account has `XPX`.
 
-2. Enter the following information for settings:
+2. Click on `Save` to continue.
+
+3. Enter the following information for settings:
 
 - REST Server Address: `api-2.testnet2.xpxsirius.io:3000` or `18.142.186.205:3000`
 - Replicator Bootstrap Address: `genesis-p2p-2.testnet2.xpxsirius.io:7904` or `54.151.161.246:7904`
@@ -41,4 +43,51 @@ cd linux-storage-tool
 - Download folder: **Click `Choose Directory` to select the directory you want to download files from drives**
 - Fee Multiplier: `15000` (default fee multiplier for *Testnet2*)
 
+4. Click on `Save` to save your configurations.
+
 **Tips**: You may use `nslookup` command to retrieve both REST Server and Replicator Bootstrap addresses.
+
+## Get test-XPX from faucet
+
+1. Open storage tool `Settings` and click on `Copy Account Key`.
+
+2. Head to [Sirius Explorer](bctestnetexplorer.xpxsirius.io), paste your `Public Key` to the search bar and hit `Enter`.
+
+3. Copy the `Public Address` displayed as `40` characters.
+
+4. Head to [Sirius Faucet](bctestnet2faucet.xpxsirius.io), paste your `Public Address` and click on `Send` to receive test-XPX.
+
+## Create drive
+
+1. Click on `+` in `Drives` tab to add drive.
+
+2. Enter the following information for Create Drive dialog:
+
+- Name: **Select any name of your choosing**
+- Replicator Number: `5`
+- Max Drive Size: **Select an amount that does not exceed the smallest capacity among the onboarded replicators (`1024`)**
+- Local Drive Folder: **Click `Choose Directory` to select the directory you want the local drive to be located**
+
+3. Click on `Confirm` to create drive.
+
+4. Your drive will now appear in the drop-down list of drives as `(creating...)` appended to its name, indicating that it has been ordered, but not created yet.
+
+5. Notification will be received if drive is created successfully.
+
+## Upload files to replicator
+
+1. When the drive is created, your files in local drive will appear in green color at the right half of the window. The right half represents difference between your `Local Drive` and `Replicated Drive`.
+
+2. Click `Apply Changes` to upload files to replicators.
+
+3. Notification will be received if the modification is registered completed.
+
+4. Your files will appear at the left half of the window, indicating that the `Replicated Drive` now contains them.
+
+## Remove drive
+
+1. Click on `-` in `Drives` tab and click on `Confirm` to remove drive.
+
+2. Your drive will now appear in the drop-down list of drives as `(...deleting)` appended to its name, indicating that it has been ordered, but not closed yet.
+
+3. Notification will be received if drive is removed/closed successfully.

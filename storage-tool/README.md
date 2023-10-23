@@ -122,6 +122,7 @@ func main() {
 3. Click on `Deploy` to deploy supercontract.
 
 **Note**: Function names does not include parentheses. e.g.: Enter `run` instead of `run()`.
+
 **Tips**: One drive can only hold a single contract. You can create multiple drives from the same local folder as long as their cumulative size doesn’t exceed replicator capacity.
 
 ## Remove drive

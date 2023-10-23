@@ -49,11 +49,27 @@ cd linux-storage-tool
 
 ## Get test-XPX from faucet
 
-1. Open storage tool `Settings` and click on `Copy Account Key`.
+1. Open storage tool `Settings` and click on `Copy Account Key` to copy your `Public Key`.
 
-2. Head to [Sirius Explorer](bctestnetexplorer.xpxsirius.io), paste your `Public Key` to the search bar and hit `Enter`.
+2. Paste your `Public Key` to the empty string and run the code below:
 
-3. Copy the `Public Address` displayed as `40` characters.
+```go
+package main
+
+import (
+  "fmt"
+	"github.com/proximax-storage/go-xpx-chain-sdk/sdk"
+)
+
+func main() {
+	publicKey := ""
+	Address, _ := sdk.NewAddressFromPublicKey(publicKey, sdk.MijinTest)
+	fmt.Printf("Address:\t\t%v\n", Address.Address)
+	fmt.Printf("NetworkType:\t%v", Address.Type)
+}
+```
+
+3. Copy your `Public Address` displayed as `40` characters in terminal.
 
 4. Head to [Sirius Faucet](bctestnet2faucet.xpxsirius.io), paste your `Public Address` and click on `Send` to receive test-XPX.
 
@@ -106,6 +122,7 @@ cd linux-storage-tool
 3. Click on `Deploy` to deploy supercontract.
 
 **Note**: Function names does not include parentheses. e.g.: Enter `run` instead of `run()`.
+**Tips**: One drive can only hold a single contract. You can create multiple drives from the same local folder as long as their cumulative size doesn’t exceed replicator capacity.
 
 ## Remove drive
 

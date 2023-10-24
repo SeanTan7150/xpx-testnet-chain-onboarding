@@ -51,7 +51,7 @@ cd linux-storage-tool
 
 1. Open storage tool `Settings` and click on `Copy Account Key` to copy your `Public Key`.
 
-2. Paste your `Public Key` to the empty string and run the code below:
+2. Paste your `Public Key` to the empty string and run the code below via `go-xpx-chain-sdk`:
 
 ```go
 package main
@@ -124,6 +124,29 @@ func main() {
 **Note**: Function names does not include parentheses. e.g.: Enter `run` instead of `run()`.
 
 **Tips**: One drive can only hold a single contract. You can create multiple drives from the same local folder as long as their cumulative size doesn’t exceed replicator capacity.
+
+## Create download channel
+
+1. Click on `+` in `Downloads` tab.
+
+2. Enter the following information for Add New Download Channel dialog:
+
+- Name: **Enter any name of your choosing**
+- Drive: **Click `Select From My Drives` to select the local drives as the download source**
+- Keys: `Optional`
+- Prepaid: `1000`
+
+3. Click on `Confirm` to create download channel.
+
+4. Your download channel will now appear in the drop-down list of channels as `(creating...)` appended to its name, indicating that it has been ordered, but not created yet.
+
+5. Notification will be received if download channel is created successfully.
+
+## Download files to local download folder
+
+1. When the download channel is created, your Supercontracts in blockchain will appear at the left half of the window. The left half represents difference between your `Replicated Download Folder` and `Local Download Folder`.
+
+2. Select the files you wished to download to `Local Download Folder` and click on `>>` to download the files to proceed.
 
 ## Remove drive
 

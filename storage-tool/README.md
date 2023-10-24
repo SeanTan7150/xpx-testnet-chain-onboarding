@@ -96,7 +96,7 @@ func main() {
 
 2. Click `Apply Changes` to upload files to replicators.
 
-3. Notification will be received if the modification is registered completed.
+3. Notification will be received if the modification is registered and completed.
 
 4. Your files will appear at the left half of the window, indicating that the `Replicated Drive` now contains them.
 
@@ -106,7 +106,7 @@ func main() {
 
 2. Click on `Deployment` tab and enter the following information for deployment:
 
-- Drive: **Select the Drive created**
+- Drive: **Select the drive created**
 - Assignee: **Enter the `Public Key` to which the test-XPX is transferred during Supercontract Closure (`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`)**
 - File: **Enter the name of the main supercontract to be executed first**
 - Function: **Enter the name of the function to be executed first**
@@ -132,7 +132,7 @@ func main() {
 2. Enter the following information for Add New Download Channel dialog:
 
 - Name: **Enter any name of your choosing**
-- Drive: **Click `Select From My Drives` to select the local drives as the download source**
+- Drive: **Click `Select From My Drives` to select the local drive as the download source**
 - Keys: `Optional`
 - Prepaid: `1000`
 
@@ -147,6 +147,25 @@ func main() {
 1. When the download channel is created, your Supercontracts in blockchain will appear at the left half of the window. The left half represents difference between your `Replicated Download Folder` and `Local Download Folder`.
 
 2. Select the files you wished to download to `Local Download Folder` and click on `>>` to download the files to proceed.
+
+## Announce stream
+
+1. Click on `Broadcasting` tab in `Streaming` tab.
+
+2. Enter the following information for broadcasting:
+
+- Drive: **Select the drive created**
+- Streaming Platform: **Select `FFMPEG` or `OBS`**
+- Path to Streaming Platform: **Click on `Browse` to select the directory path to `FFMPEG` or `OBS`**
+
+3. Click on `+` and enter the following information to add streaming announcement:
+
+- Title: **Enter any name of your choosing**
+- Starting Time: **Select any starting datetime of your choosing**
+
+4. Click on `Confirm` to order a modification and `Start Streaming` to start streaming.
+
+5. Notification will be received if the stream is announced successfully and `./videos` folder will be added into your `Local Drive Folder`.
 
 ## Remove drive
 
